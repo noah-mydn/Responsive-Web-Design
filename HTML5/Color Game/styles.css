@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:50px;
+    margin-left:25%;
+    margin-right: 25%;
+}
+
+.colorBox {
+    width: 150px;
+    height: 180px;
+    border: 1px solid black;
+    padding: 10px;
+   }

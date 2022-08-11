@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="documentation.css"/>
+        <title>PHP Documentation</title>
+    </head>
+    <body>
+        <main>
+            <section class="logo-title-bar">
+                <img class="logo" src="https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-png-transparent.png"
+                 alt="PHP_logo"/>
+                <header id="PHP_Manual">PHP
+                </header>
+            </section>
+            <section class="navigation">
+                <nav>
+                    <header id="nav-title"><h3>PHP Documentation</h3></header>
+                    <ul style="list-style: none;">
+                        <li class="nav-link"><a href="#Getting_Started">Getting Started</a></li>
+                        <li class="nav-link"><a href="#Installation_and_Configuration"  >Installation and Configuration</a></li>
+                        <li class="nav-link"><a href="#Basic_Syntax">Basic Syntax</a></li>
+                        <li class="nav-link"><a href="#Types" >Types</a></li>
+                        <li class="nav-link"><a href="#Variables" >Variables</a></li>
+                        <li class="nav-link"><a href="#Constants" >Constants</a></li>
+                        <li class="nav-link"><a href="#Operators" >Operators</a></li>
+                        <li class="nav-link"><a href="#Control_Structures" >Control Structures</a></li>
+                        <li class="nav-link"><a href="#Functions" >Functions</a></li>
+                        <li class="nav-link"><a href="#Class_and_Objects" >Class and Objects</a></li>
+                        <li class="nav-link"><a href="#Enumerations" >Enumerations</a></li>
+                        <li class="nav-link"><a href="#Errors" >Errors</a></li>
+                        <li class="nav-link"><a href="#Exceptions" >Exceptions</a></li>
+                        <li class="nav-link"><a href="#Reference" >Reference</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="main-section" id="Getting_Started">
+                <header class="title_heading">Getting Started</header>
+                <p class="description">PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited 
+                    for web development and can be embedded into HTML. <br/><br/>
+                    Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code 
+                    that does "something" (<i>in this case, output "Hi, I'm a PHP script!"</i>). 
+                    The PHP code is enclosed in special start and end processing instructions 
+                    <code>&lt;?php and ?&gt;</code> that allow you to jump into and out of "PHP mode." <br/><br/>
+                </p>
+                <h4>Example #1 An introductory example</h4>
+                <div class="code-box">
+                        <code>
+                            &lt;?php <br/>
+            echo "Hi, I'm a PHP script!"; <br/>
+        ?&gt;
+                        </code>
+                </div>
+                <p class="description">
+                        What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, 
+                    and then there's really no way that users can tell what you have up your sleeve. <br/><br/>
+
+                    The best part about using PHP is that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid to read the long list of PHP's features. You can jump in, in a short time, 
+                    and start writing simple scripts in a few hours.
+                </p>
+            </section>
+            <section class="main-section" id="Installation_and_Configuration">
+            <p class="description">
+                There are three main areas where PHP scripts are used. <br/><br/>
+                
+                <ul class="description">
+                    <li>
+                        Server-side scripting. This is the most traditional and main target field for PHP. You need three things to make this work: the PHP parser (CGI or server module), a web server and a web browser. You need to run the web server, with a connected PHP installation. You can access the PHP program output with a web browser, viewing the PHP page through the server.
+                         All these can run on your home machine if you are just experimenting with PHP programming.
+                    </li> <br/>
+                    <li>
+                        Command line scripting. You can make a PHP script to run it without any server or browser. You only need the PHP parser to use it this way. This type of usage is ideal for scripts regularly executed using cron (on *nix or Linux) or Task Scheduler (on Windows).
+                         These scripts can also be used for simple text processing tasks. 
+                    </li> <br/>
+                    <li>
+                        Writing desktop applications. PHP is probably not the very best language to create a desktop application with a graphical user interface, but if you know PHP very well, and would like to use some advanced PHP features in your client-side applications you can also use PHP-GTK to write such programs. You also have the ability to write cross-platform applications this way. 
+                        PHP-GTK is an extension to PHP, not available in the main distribution.
+                    </li> <br/>
+                </ul>
+            </p>
+        </section>
+        </main>
+    </body>
+</html>

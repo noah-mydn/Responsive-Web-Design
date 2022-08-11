@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+
+html,body {
+    padding:0;
+    margin:0;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "h h h h h h h h h h h h"
+                         "c c c c c c c c c c c c"
+                         "f f f f f f f f f f f f";
+    
+}
+
+.heading {
+   
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 4fr auto;
+    grid-auto-columns: 100px;
+    column-gap: 0;
+    grid-template-areas: "logo nav";
+    background-image:linear-gradient(180deg,#fffb15,#e8eb2b,#d0eb89);
+}
+
+.image {
+    grid-area: logo;
+    justify-self: start;
+    align-self: center;
+}
+
+.logo {
+    width: 170px;
+    height: 80px;
+    border-radius: 70%;
+}
+
+.navigation {
+    justify-self: end;
+    grid-area: nav;
+    align-self: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-family: 'David Libre', serif;
+    font-size: 1.2em;
+    display: inline-block;
+    background-color: #2B7A0B;
+    padding:10px;
+    margin:0 5px;
+    border-radius: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+
+@media only screen and (max-width:890px) {
+    .logo {
+        width: 140px;
+        height: 55px;
+        border-radius: 80%;
+        justify-items: start;
+    }
+
+    h1 {
+       font-family: 'Amita', cursive;
+       text-align:center;
+       color:#2B7A0B;
+       font-size: 2.5rem;
+       font-style: italic;
+       margin:0 auto; }
+    
+    .product-title {
+        font-family: 'Amita', cursive;
+        font-size:1rem;
+        font-weight: bold;
+        align-self: center;
+        justify-self: baseline;
+        margin:3px 0;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        font-family: 'David Libre', serif;
+        font-size: 1.05em;
+        display: inline-block;
+        background-color: #2B7A0B;
+        padding:8px;
+        margin:0 5px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width:755px) {
+
+}
+
+
+.content {
+    background-image:linear-gradient(to bottom,#edf39a,#fff,#fff,#fff,#edf39a);
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title title"
+                         "parargraph paragraph"
+                         "coco-image brand"
+
+
+}
+
+
+.image-with-text {
+    margin:5px 15px;
+}
+
+#title {
+    grid-area: title;
+}
+
+hr {
+    border:1px solid #2B7A0B;
+    margin:2px 0;
+}
+
+
+.image-with-text h1 {
+    font-family: 'Amita', cursive;
+    font-weight: bold;
+    text-align:center;
+    color:#2B7A0B;
+    font-size: 3rem;
+    font-style: italic;
+ 
+}
+
+.product-title{
+    font-family: 'Amita', cursive;
+    font-size:1.2rem;
+    text-align:center;
+}
+
+.description-text {
+    grid-area: paragraph;
+    font-family: "Raleway", serif;
+    font-size: 18px;
+}
+
+#large-image {
+    grid-area: coco-image;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 300px;
+}
+
+.description-container {
+    grid-area: brand;
+}
+
+.footer {
+    background-color: burlywood;
+    grid-area: f; 
+}

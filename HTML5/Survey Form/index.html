@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Summer Camp Survey Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Summer Camp Satisfaction Survey Form for 2021</h1>
+    <p id="description">Thank you for participating in Summer Camp Satisfaction Survey</p>
+    <form id="survey-form" action="">
+      <fieldset>
+        <label id="name-label">Enter Your Full Name <input type="text" name="name" required placeholder="Hermione Granger"/></label>
+        <label id="email-label">Enter Your Email <input type="email" name="email" required placeholder="hermionegranger@hotmail.com"/></label>
+        <label id="number-label">Enter Your Age <input type="number" name="number" required placeholder="12" min="12" max="18"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Choose your Gender<br>
+        <input type="radio" name="gender" class="inline" /> Male
+        <input type="radio" name="gender" class="inline" /> Female
+        </label>
+        <br>
+        <label> What activities did you enjoy in our Summer Camp? <br>
+                <label class="checkbox_label"><input type="checkbox" value="starGazing" />Star Gazing</label>
+                <label class="checkbox_label"><input type="checkbox" value="tag"/>Back to Back Tag</label>
+                <label class="checkbox_label"><input type="checkbox" value="picnic"/>Picnic in the Park</label>
+                <label class="checkbox_label"><input type="checkbox" value="scavengerHunt"/>Nature Scavenger Hunt</label>
+                <label class="checkbox_label"><input type="checkbox" value="mashmallowDrop"/>Mashmallow Drop</label>
+                <label class="checkbox_label"><input type="checkbox" value="campfireChallenges"/>Campfire Challenges</label>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Do you have any suggestions for new activities?</label>
+        <textarea rows="5" cols="30" style="resize: none;">
+        </textarea>
+        <label id="select">Would you recommend our summer camp to your friends?</label>
+        <select id="dropdown" required>
+            <option value="">(select one)</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="maybe">Maybe</option>
+        </select>
+
+        <label>How did you hear about us?
+          <select id="referrer" required>
+            <option value="">(select one)</option>
+>           <option value="1">Friends or Family</option>
+            <option value="2">Website</option>
+            <option value="3">Newsletter</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label>Overall, how satisfied you are with this Summer Camp? (1-10)
+            <input type="number" id="satisfaction" min="1" max="10" placeholder="7" required/>
+        </label>
+
+        <label>Optional remarks regarding the summer camp</label>
+          <textarea textarea rows="5" cols="30" style="resize: none;">
+        </textarea>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
