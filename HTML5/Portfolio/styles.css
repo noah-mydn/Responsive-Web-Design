@@ -1,0 +1,163 @@
+
+
+:root {
+    --primary-color:#f34838;
+    --secondary-color:#ffcc23;
+    --secondary-color-2:#7c5a15;
+    --text-color:#008890;
+}
+
+html,body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    box-shadow: 1px 4px 5px 2px #a72a1f;
+    background-color:var(--primary-color);
+    height:4em;
+    
+    
+
+}
+.nav-elements li a {
+    margin:0 10px;
+    font-size:18px;
+    color:white;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+    text-align: center;  
+}
+
+.nav-elements li a::after {
+    content:'';
+    width:100%;
+    height:100%;
+    transform:translate(-50%);
+    border-radius:4px;
+    background-color:#ff9e9e;
+    position: absolute;
+    left:50%;
+    top:90%;
+    transform:translate(-50%,-50%);
+    transition:top 0.5s, opacity 0.8s;
+    z-index:-1;
+    opacity:0;
+    
+}
+
+.nav-elements li a:hover {
+    color:rgb(102, 1, 1);
+}
+
+.nav-elements li a:hover::after {
+    top:55%;
+    opacity: 1;
+}
+
+button {
+    position:relative;
+    left:90%;
+
+}
+
+.fa-bars {
+    font-size:1.2em;
+    color:white;
+}
+
+
+#intro-text {
+    color:var(--text-color);
+    margin-top:6.5em;   
+    
+}
+
+#intro-text h1 {
+    font-size: 3em;
+    font-weight:bold;
+    text-shadow: 0 0.2px black;
+}
+
+.image-fluid {
+    max-width:100%;
+    margin-bottom: -3px;
+    overflow: hidden;
+    
+}
+
+
+@media only screen and (max-width:992px) {
+    .image-fluid {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width:560px) {
+    .image-fluid {
+        max-width: 90%;
+    }
+}
+
+
+#projects {
+    background-color: #dcebf3;
+    padding-top: 3.2em;
+}
+
+#project-area {
+    background-color: #dfe9f3;
+}
+
+.card {
+    width:25em;
+    padding:0;
+    margin:30px 10px;
+}
+
+
+.card-body {
+    background-color: #008890;
+    text-align:center;
+    width: 100%;
+    
+    
+}
+
+.card-body a {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+   
+}
+
+.card-body h4:hover {
+    
+    animation:text 1s 1;
+    
+}
+
+@keyframes text {
+    0% {
+        letter-spacing: 3px;
+        
+    }
+
+    45% {
+        letter-spacing:5px;
+        
+    }
+    
+}
+#footer small {
+    color:white;
+}
+small a {
+    text-decoration: none;
+    color: #ffcc23;
+}
+
+small a:hover{
+    color: #f34838;
+}
+
