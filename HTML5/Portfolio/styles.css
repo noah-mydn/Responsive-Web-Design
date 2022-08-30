@@ -1,0 +1,237 @@
+
+
+:root {
+    --primary-color:#f34838;
+    --secondary-color:#ffcc23;
+    --secondary-color-2:#7c5a15;
+    --text-color:#008890;
+}
+
+html,body {
+    font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 2.5em;
+}
+
+nav {
+    box-shadow: 1px 4px 5px 2px #a72a1f;
+    background-color:var(--primary-color);
+    height:4em;
+    
+    
+
+}
+.nav-elements li a {
+    margin:0 10px;
+    font-size:18px;
+    color:white;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+    text-align: center;  
+}
+
+.nav-elements li a::after {
+    content:'';
+    width:100%;
+    height:100%;
+    transform:translate(-50%);
+    border-radius:4px;
+    background-color:#ff9e9e;
+    position: absolute;
+    left:50%;
+    top:90%;
+    transform:translate(-50%,-50%);
+    transition:top 0.5s, opacity 0.8s;
+    z-index:-1;
+    opacity:0;
+    
+}
+
+.nav-elements li a:hover {
+    color:rgb(102, 1, 1);
+}
+
+.nav-elements li a:hover::after {
+    top:55%;
+    opacity: 1;
+}
+
+button {
+    position:relative;
+    left:90%;
+
+}
+
+.fa-bars {
+    font-size:1.2em;
+    color:white;
+}
+
+
+#intro-text {
+    color:var(--text-color);
+    margin-top:6.5em;   
+    
+}
+
+#intro-text h1 {
+    font-size: 3em;
+    font-weight:bold;
+    text-shadow: 0 0.2px black;
+}
+
+.image-fluid {
+    max-width:100%;
+    margin-bottom: -3px;
+    overflow: hidden;
+    
+}
+
+
+@media only screen and (max-width:992px) {
+    .image-fluid {
+        max-width: 80%;
+    }
+
+}
+
+@media only screen and (min-width:560px) {
+    .image-fluid {
+        max-width: 90%;
+    }
+
+}
+
+
+#projects {
+    background-color: #dcebf3;
+    padding-top: 3em;
+}
+
+#project-area {
+    background-color: #dfe9f3;
+}
+
+.card {
+    width:25em;
+    padding:0;
+    margin:30px 10px;
+}
+
+
+.card-body {
+    background-color: #008890;
+    text-align:center;
+    width: 100%;
+    
+    
+}
+
+.card-body a {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+   
+}
+
+.card-body h4:hover {
+    
+    animation:text 1s 1;
+    
+}
+
+@keyframes text {
+    0% {
+        letter-spacing: 3px;
+        
+    }
+
+    45% {
+        letter-spacing:5px;
+        
+    }
+    
+}
+
+#contact {
+    padding-top: 3em;
+    background-color: #04504e;
+    color:white;
+}
+
+#contact h3 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.form-group {
+    padding: 10px 0;
+}
+
+.btn {
+    background-color:var(--primary-color);
+    color:white;   
+
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: #04504e;
+}
+
+.fa-brands {
+    font-size: 1.5em;
+    line-height:3em;
+    padding:0 0.8em;
+}
+
+.fa-brands span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-brands:hover {
+    animation: icon 1s linear 1;
+    cursor:pointer;
+}
+
+@keyframes icon {
+    0% {
+        transform:translateY(-9px);
+    }
+
+    25% {
+        transform:translateY(-6px);
+    }
+
+    50% {
+        transform:translateY(-3px);
+    }
+
+    100% {
+        transform:translateY(0px);
+    }
+
+    
+
+}
+
+#footer {
+    padding:5px;
+}
+
+.social {
+    padding:0 15px;
+}
+
+#footer small {
+    color:white;
+}
+small a {
+    text-decoration: none;
+    color: #ffcc23;
+}
+
+small a:hover{
+    color: #f34838;
+}
+

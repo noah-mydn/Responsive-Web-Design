@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!--Font-Awesome-->
+    <script src="https://kit.fontawesome.com/40f2643406.js" crossorigin="anonymous"></script>
+    <!--My Style-->
+    <link rel="stylesheet" href="styles.css"/>
+
+    <title>Personal Portfolio</title>
+</head>
+<body>
+        <main class="container-fluid">
+            <!--Navigation-->
+            <section id="navigation" class="row justify-content-end">
+                    <nav class="navbar navbar-expand-sm fixed-top p-3" id="navbar">
+                        <div class="container-fluid">                       
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNav">
+                        <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="collapseNav">
+                            <ul class="navbar-nav nav-elements">
+                                <li class="nav-item"><a class="nav-link" href="#welcome-section">About</a></li>
+                                <li class="nav-item "><a class="nav-link" href="#projects">Projects</a></li>
+                                <li class="nav-item "><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>   
+                </div>
+            </section>
+
+            <!--About-->
+            <section id="welcome-section" class="row vh-100">
+                
+                    <div class="row row-cols-2 ">
+                        <div id="intro-text" class="text-center fw-bold col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column">
+                            <h1>Hi there, I'm May Yadanar</h1>
+                            <p><small>An undergraduate Computer Science student looking for web-development job for entry level to make use of her web programming knowlege</small></p>
+                        </div>
+                        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-xl-end align-items-center" id="intro-img">
+                            <img src="./images/laptop girl.png" class="image-fluid" alt="a girl with a laptop"/>
+                        </div>
+
+                    </div>                           
+            </section>
+
+            <!--Projects-->
+            <section id="projects" class="row">
+                <h1 class="text-center fw-bold" style="color:var(--text-color)">Some of my Responsive Web Design Projects</h1>
+                <div class="row justify-content-center align-items-center ">
+                    <div class="row row-cols-lg-3 row-cols-md-6 row-cols-12 gx-3 justify-content-around align-items-center project-tile">
+                        <div class="card">
+                            <img src="./images/tribute.png" class="card-img-top" alt="Tribute page for General Aung San"/>
+                             
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/PoQwQeK">Tribute Page</a></h4>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./images/survey.png" class="card-img-top" alt="Summer Camp Survey Form"/>
+                             
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/mdxJOXL">Survey Form Page</a></h4>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./images/documentation.png" class="card-img-top" alt="PHP Documentation Page"/>
+                             
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/bGvYddw">Documentation Page</a></h4>
+                            </div>
+                        </div>
+    
+                        <div class="card">
+                            <img src="./images/product.png" class="card-img-top" alt="Product Landing Page of Cocohealth"/>
+                             
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/dymgxom">Product Landing Page</a></h4>
+                            </div>
+                        </div>
+                    
+
+                    <div class="card">
+                        <img src="./images/portfolio.png" class="card-img-top" alt="Color Game Choose App"/>
+                         
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/abYrMJV">Portfolio Page</a></h4>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/color_game.png" class="card-img-top" alt="Color Game Choose App"/>
+                         
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="https://codepen.io/noah-mydn/pen/xxYwKxJ">Color Game App</a></h4>
+                        </div>
+                    </div>
+
+                    </div>                   
+                </div>
+            </section>
+
+            <section id="contact" class="row">
+                <h3 class="contact-title text-center">Let's work on project together!</h3>
+                <div class="row row-cols-3 justify-content-between py-3 my-2">
+                    <div class="col-md-6 col-12 d-flex justify-content-center justify-content-md-start flex-column">
+                        <form class="form-check" action="mailto:mayyadanar@hotmail.com">
+                            <div class="form-group">
+                                <label class="form-label">Your Name</label>
+                                <input class="form-control" type="text" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Your Email</label>
+                                <input class="form-control" type="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Your Message</label>
+                                <textarea class="form-control" rows="5" style="resize:none" required></textarea>
+                            </div>
+                            <div class="form-group py-2 text-center">
+                                <input class="btn w-100 " type="submit" value="Send">   
+                            </div>
+                                                    
+                        </form>
+                    </div>
+
+                        <div class="col-md-3 col-12 d-flex flex-md-column d-flex justify-content-md-center align-items-md-start flex-row justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook"><span class="social">Facebook</span></i>
+                            <i class="fa-brands fa-square-twitter"><span class="social">Twitter</span></i>
+                            <i class="fa-brands fa-linkedin"><span class="social">Linkedin</span></i>
+                            <i class="fa-brands fa-codepen"><span class="social">Codepen</span></i>
+                            <i class="fa-brands fa-github"><span class="social">Github</span></i>
+                        </div>
+                    
+                </div>
+            </section>
+
+           <section id="footer" class="row text-center bg-dark py-2">
+                    <small>&copy;Copyright 2022 | Created by <a href="https://github.com/noah-mydn" id="profile-link" target="_blank">May Yadanar</a></small>
+           </section>
+        </main>
+
+        <script>
+
+                let spanElement= document.getElementsByClassName('social');
+                let length= spanElement.length-1;
+                let mql = window.matchMedia("(max-width: 576px)")
+                
+            if (mql.matches) {
+                for(length; length>=0; length-- ) {
+                    spanElement[length].remove(); 
+                }
+                }
+            
+        
+            
+        </script>
+</body>
+</html>
